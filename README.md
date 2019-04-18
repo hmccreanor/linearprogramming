@@ -1,6 +1,6 @@
 # Simplex Algorithm
 
-Implementation of the simplex algorithm. Reads linear expressions in from a text file, converts them to a tableu which can be used to run the simplex algorithm. Runs the simplex algorithm on the tableu. Returns the tableu. Boom sorted.
+Implementation of the simplex algorithm. Reads linear expressions in from a text file, converts them to a tableu which can be used to run the simplex algorithm. Runs the simplex algorithm on the tableu. Returns the tableu and the optimal configurations of the variables. Boom sorted.
 
 
 The format of the linear expression specification file is as follows:
@@ -15,6 +15,8 @@ Constraint 3
 Constraint n
 ```
 
+Variables can be given multiletter names if desirable.
+
 An example input file is specified below:
 ```
 60x + 90y + 300z
@@ -25,5 +27,3 @@ x + 3y LT 600
 ```
 **N.B** LT stands for 'less than or equal to'
 
-## Todo:
-+ Implement pretty printing of optimal results
